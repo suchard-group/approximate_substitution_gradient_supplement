@@ -27909,8 +27909,7 @@
 		<taxa idref="taxa"/>
 	</attributePatterns>
 
-	<!-- <empiricalTreeDistributionModel id="treeModel" fileName="../../../full_xml/airCommunitiesMM_500.trees"> -->
-	<empiricalTreeDistributionModel id="treeModel" fileName="./airCommunitiesMM_500.trees">
+	<empiricalTreeDistributionModel id="treeModel" fileName="../xmls/airCommunitiesMM_500.trees">
 		<taxa idref="taxa"/>
 	</empiricalTreeDistributionModel>
 	<statistic id="treeModel.currentTree" name="Current Tree">
