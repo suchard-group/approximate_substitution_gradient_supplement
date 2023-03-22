@@ -28079,7 +28079,7 @@
 			</column>
 		</log>
 		
-		<log id="fileLog" logEvery="1000" fileName="airCommunitiesMM.log">
+		<log id="fileLog" logEvery="1000" fileName="airCommunitiesMM_HMC.log">
 			<posterior idref="posterior"/>
 			<prior idref="prior"/>
 			<likelihood idref="likelihood"/>
@@ -28094,7 +28094,7 @@
 			<glmModel idref="glmModel"/>
   		</log>
 
-		<log id="fileLogRE" logEvery="50" fileName="randomEffects.log" overwrite="false">
+		<log id="fileLogRE" logEvery="50" fileName="randomEffects_HMC.log" overwrite="false">
 			<parameter idref="glmRandCoefficients"/>
 		</log>
 
