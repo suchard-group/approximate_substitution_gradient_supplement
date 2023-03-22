@@ -99,6 +99,7 @@ The analyses on this dataset are:
   ../xmls/SC2_GTR.xml
   ```
 
+The posterior-predictive simulations using `piBUSS` are explained in the README in that folder.
 
 ### Influenza A
 
