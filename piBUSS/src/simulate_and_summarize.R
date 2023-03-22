@@ -38,12 +38,12 @@ write.csv(rbind(obs_test_stats),"piBUSS/data/observed_test_statistics.csv",quote
 for (model in c("GTR","REfx")) {
   
   if ( model == "GTR" ) {
-    target_dir <- "GTR"
+    target_dir <- "SC2_GTR"
     dir.create("piBUSS/GTR")
     log_name <- "SC2_GTR.log"
     tree_name <- "SC2_GTR.trees"
   } else {
-    target_dir <- "HMC"
+    target_dir <- "SC2_HMC"
     dir.create("piBUSS/randomEffects")
     log_name <- "SC2_HMC.log"
     tree_name <- "SC2_HMC.trees"

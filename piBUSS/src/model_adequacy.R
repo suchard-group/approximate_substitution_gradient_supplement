@@ -9,10 +9,10 @@ numAlnTestStats <- function(num.aln) {
       sum(x == i)
     })
   })
-  is_inv <- apply(n,2,function(x){sum(x > 0) == 1})
+  bcd <- apply(n,2,function(x){sum(x > 0)})
   
   # Calculate averages, variances, and covariances only on variable sites
-  n <- n[,!is_inv]
+  n <- n[,bcd > 1]
   p <- apply(n,2,function(x){x/sum(x)})
   m <- cov(t(p))
   
