@@ -156,3 +156,20 @@ The following commands will run MAP optimization with numeric and approximate gr
     - This adds several lines to the output. The key lines are:
         - `Mean vector: [...]`: the mean vector of the multivariate Normal approximation (in the unbounded transformed space). For this analysis this is the same as `X`.
         - `Stdev vector: [...]`: for each variable, this is the standard deviation of the Normal approximation to its marginal posterior distribution.
+
+### Dependent evolution in Hylinae
+The analyses of the Hylinae dataset run quickly and converge readily and only a single chain of each was run.
+- Analysis of characters evolving independently
+  ```
+  java -Djava.library.path=/usr/local/lib \
+  -jar /path/to/beast-mcmc/build/dist/beast.jar \
+  -seed 666 -overwrite \
+  ../xmls/multistate_independent.xml
+  ```
+- Analysis of characters evolving with dependence
+  ```
+  java -Djava.library.path=/usr/local/lib \
+  -jar /path/to/beast-mcmc/build/dist/beast.jar \
+  -seed 666 -overwrite \
+  ../xmls/multistate_dependent.xml
+  ```

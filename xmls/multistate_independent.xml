@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<beast>
+  <taxa id="taxa">
+    <taxon id="Anotheca_spinosa">
+      <attr name="trait">
+        3
+      </attr>
+    </taxon>
+    <taxon id="Charadrahyla_altipotens">
+      <attr name="trait">
+        2
+      </attr>
+    </taxon>
+    <taxon id="Charadrahyla_nephila">
+      <attr name="trait">
+        3
+      </attr>
+    </taxon>
+    <taxon id="Charadrahyla_taeniopus">
+      <attr name="trait">
+        3
+      </attr>
+    </taxon>
+    <taxon id="Diaglena_spatulata">
+      <attr name="trait">
+        4
+      </attr>
+    </taxon>
+    <taxon id="Dryophytes_eximia">
+      <attr name="trait">
+        4
+      </attr>
+    </taxon>
+    <taxon id="Duellmanohyla_chamulae">
+      <attr name="trait">
+        5
+      </attr>
+    </taxon>
+    <taxon id="Duellmanohyla_ignicolor">
+      <attr name="trait">
+        5
+      </attr>
+    </taxon>
+    <taxon id="Duellmanohyla_schmidtorum">
+      <attr name="trait">
+        5
+      </attr>
+    </taxon>
+    <taxon id="Ecnomiohyla_miotympanum">
+      <attr name="trait">
+        1
+      </attr>
+    </taxon>
+    <taxon id="Exerodonta_abdivita">
+      <attr name="trait">
+        3
+      </attr>
+    </taxon>
+    <taxon id="Exerodonta_juanitae">
+      <attr name="trait">
+        4
+      </attr>
+    </taxon>
+    <taxon id="Exerodonta_sumichrasti">
+      <attr name="trait">
+        2
+      </attr>
+    </taxon>
+    <taxon id="Megastomatohyla_mixe">
+      <attr name="trait">
+        3
+      </attr>
+    </taxon>
+    <taxon id="Megastomatohyla_pellita">
+      <attr name="trait">
+        0
+      </attr>
+    </taxon>
+    <taxon id="Plectrohyla_matudai">
+      <attr name="trait">
+        2
+      </attr>
+    </taxon>
+    <taxon id="Ptychohyla_achrocorda">
+      <attr name="trait">
+        2
+      </attr>
+    </taxon>
+    <taxon id="Ptychohyla_euthysanota">
+      <attr name="trait">
+        5
+      </attr>
+    </taxon>
+    <taxon id="Ptychohyla_leonhardschultzei">
+      <attr name="trait">
+        3
+      </attr>
+    </taxon>
+    <taxon id="Ptychohyla_zophodes">
+      <attr name="trait">
+        3
+      </attr>
+    </taxon>
+    <taxon id="Sarcohyla_bistincta">
+      <attr name="trait">
+        2
+      </attr>
+    </taxon>
+    <taxon id="Sarcohyla_cyclada">
+      <attr name="trait">
+        1
+      </attr>
+    </taxon>
+    <taxon id="Sarcohyla_hazelae">
+      <attr name="trait">
+        3
+      </attr>
+    </taxon>
+    <taxon id="Sarcohyla_thorectes">
+      <attr name="trait">
+        2
+      </attr>
+    </taxon>
+    <taxon id="Smilisca_baudinii">
+      <attr name="trait">
+        2
+      </attr>
+    </taxon>
+    <taxon id="Smilisca_cyanosticta">
+      <attr name="trait">
+        5
+      </attr>
+    </taxon>
+    <taxon id="Tlalocohyla_picta">
+      <attr name="trait">
+        4
+      </attr>
+    </taxon>
+    <taxon id="Tlalocohyla_smithii">
+      <attr name="trait">
+        4
+      </attr>
+    </taxon>
+    <taxon id="Triprion_petasatus">
+      <attr name="trait">
+        1
+      </attr>
+    </taxon>
+
+  </taxa>
+
+
+  <generalDataType id="trait.dataType">
+    <state code="0"/>
+    <state code="1"/>
+    <state code="2"/>
+    <state code="3"/>
+    <state code="4"/>
+    <state code="5"/>
+  </generalDataType>
+
+  <attributePatterns id="trait.pattern" attribute="trait">
+    <taxa idref="taxa"/>
+    <generalDataType idref="trait.dataType"/>
+  </attributePatterns>
+
+  <newick id="startingTree" usingHeights="true" usingDates="false">
+    (((((Exerodonta_abdivita:6.615953601,Exerodonta_sumichrasti:6.615953601):12.21652163,(Plectrohyla_matudai:11.41815832,((Sarcohyla_bistincta:8.119003887,Sarcohyla_cyclada:8.119003887):1.346500516,(Sarcohyla_hazelae:6.159972295,Sarcohyla_thorectes:6.159972295):3.305532107):1.952653922):7.414316906):9.17046628,((Duellmanohyla_ignicolor:17.57734379,((Duellmanohyla_chamulae:6.442750468,Duellmanohyla_schmidtorum:6.442750468):4.019754961,((Ptychohyla_achrocorda:3.432944625,(Ptychohyla_leonhardschultzei:1.342652325,Ptychohyla_zophodes:1.342652325):2.090292299):1.533628282,Ptychohyla_euthysanota:4.966572906):5.495932522):7.11483836):5.868769294,Ecnomiohyla_miotympanum:23.44611308):4.556828428):0.6772509544,((((Charadrahyla_altipotens:3.909431824,Exerodonta_juanitae:3.909431824):3.405434029,Charadrahyla_nephila:7.314865853):4.690952704,Charadrahyla_taeniopus:12.00581856):13.08966082,(Megastomatohyla_mixe:3.228107657,Megastomatohyla_pellita:3.228107657):21.86737172):3.584713084):3.137457202,((((((Anotheca_spinosa:13.22103954,Diaglena_spatulata:13.22103954):2.086165315,Triprion_petasatus:15.30720485):4.632434286,Smilisca_cyanosticta:19.93963914):2.312423623,Smilisca_baudinii:22.25206276):2.711844888,Dryophytes_eximia:24.96390765):1.930922802,(Tlalocohyla_picta:15.38054466,Tlalocohyla_smithii:15.38054466):11.51428579):4.922819218);
+  </newick>
+
+  <treeModel id="treeModel" fixHeights="true">
+    <tree idref="startingTree"/>
+    <rootHeight>
+      <parameter id="treeModel.rootHeight"/>
+    </rootHeight>
+    <nodeHeights internalNodes="true">
+      <parameter id="treeModel.internalNodeHeights"/>
+    </nodeHeights>
+    <nodeHeights internalNodes="true" rootNode="true">
+      <parameter id="treeModel.allInternalNodeHeights"/>
+    </nodeHeights>
+  </treeModel>
+
+  <strictClockBranchRates id="trait.branchRates">
+    <rate>
+      <parameter id="trait.clock.rate" value="1E-4" lower="0.0"/>
+    </rate>
+  </strictClockBranchRates>
+
+  <!-- The random effects model -->
+  <glmSubstitutionModel id="trait.model">
+    <dataType idref="trait.dataType"/>
+    <rootFrequencies>
+      <frequencyModel id="frequencyModel" normalize="true">
+        <dataType idref="trait.dataType"/>
+        <frequencies>
+          <!-- Fixing these to equal means they do not effect the rate matrix, and that we take our root prior to be equal -->
+          <parameter id="frequencies" dimension="6" value = "0.1666667 0.1666667 0.1666667 0.1666667 0.1666667 0.1666667"/>
+        </frequencies>
+      </frequencyModel>
+    </rootFrequencies>
+
+    <glmModel family="logLinear" checkIdentifiability="false" id="trait.glm">
+      <independentVariables>
+        <parameter id="fixed.effects" dimension="8" value="1.0"/>
+        <designMatrix id="fixed.effects.designMatrix">
+          <!-- ..01 == alternating -> both -->
+          <!-- ..10 == both -> alternating -->
+          <!-- ..02 == alternating -> simultaneous -->
+          <!-- ..20 == simultaneous -> alternating -->
+          <!-- ..12 == both -> simultaneous -->
+          <!-- ..21 == simultaneous -> both -->
+          <parameter id="r..01" value="0 1 0 0 0 0 1 0 0 0 0 0 0 0 0     0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"/>
+          <parameter id="r..10" value="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0     0 1 0 0 0 0 1 0 0 0 0 0 0 0 0"/>
+          <parameter id="r..02" value="0 0 0 1 0 0 0 0 1 0 0 0 0 0 0     0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"/>
+          <parameter id="r..20" value="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0     0 0 0 1 0 0 0 0 1 0 0 0 0 0 0"/>
+          <parameter id="r..12" value="0 0 0 0 0 0 0 0 0 0 1 0 0 1 0     0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"/>
+          <parameter id="r..21" value="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0     0 0 0 0 0 0 0 0 0 0 1 0 0 1 0"/>
+          <!-- 01.. == understory -> canopy -->
+          <!-- 10.. == canopy -> understory -->
+          <parameter id="r01.." value="1 0 0 0 0 0 0 0 0 1 0 0 0 0 1     0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"/>
+          <parameter id="r10.." value="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0     1 0 0 0 0 0 0 0 0 1 0 0 0 0 1"/>
+        </designMatrix>
+      </independentVariables>
+      <independentVariables>
+        <parameter id="random.effect.fixed0" dimension="1" value="1.0"/> <!-- this ensures no double substitutionsl leave at 0.0, no moves!-->
+        <designMatrix id="random.effect.fixed0.designMatrix">
+          <parameter id="random.effect.fixed0.design" value="0 0 -Infinity 0 -Infinity -Infinity 0 -Infinity 0 0 0 -Infinity -Infinity 0 0     0 0 -Infinity 0 -Infinity -Infinity 0 -Infinity 0 0 0 -Infinity -Infinity 0 0"/>
+        </designMatrix>
+      </independentVariables>
+      <independentVariables>
+        <parameter id="clock.rate.ratio" dimension="1" value="1.0"/>
+        <designMatrix id="clock.rate.ratio.designMatrix">
+          <parameter id="clock.rate.ratio.design" value="0 1 0 1 0 0 1 0 1 0 1 0 0 1 0     0 1 0 1 0 0 1 0 1 0 1 0 0 1 0"/>
+        </designMatrix>
+      </independentVariables>
+    </glmModel>
+  </glmSubstitutionModel>
+
+  <siteModel id="trait.siteModel">
+    <substitutionModel>
+      <glmSubstitutionModel idref="trait.model"/>
+    </substitutionModel>
+  </siteModel>
+
+  <treeDataLikelihood id="treeLikelihood" useAmbiguities="true" usePreOrder="true"
+                      branchInfinitesimalDerivative="true"
+                      scalingScheme="never" delayScaling="false">
+    <patterns idref="trait.pattern"/>
+    <treeModel idref="treeModel"/>
+    <siteModel idref="trait.siteModel"/>
+    <strictClockBranchRates idref="trait.branchRates"/>
+  </treeDataLikelihood>
+
+	<bayesianBridge id="fixed.effects.prior">
+		<parameter idref="fixed.effects"/>
+    <globalScale>
+      <parameter value="1.0" lower="0"/> <!-- Normal sigma parameter -->
+    </globalScale>
+    <exponent>
+      <parameter value="2.0"/>
+    </exponent>
+    <localScale>
+      <parameter value="1.0" dimension="8"/> <!-- Leave fixed for Normal prior-->
+    </localScale>
+  </bayesianBridge>
+
+  <bayesianBridge id="random.effect.fixed0.dummyPrior">
+    <parameter idref="random.effect.fixed0"/>
+    <globalScale>
+      <parameter value="1.0" lower="0"/>
+    </globalScale>
+    <exponent>
+      <parameter value="2.0"/>
+    </exponent>
+    <localScale>
+      <parameter value="1.0" dimension="1"/>
+    </localScale>
+  </bayesianBridge>
+
+  <bayesianBridge id="clock.rate.ratio.prior">
+    <parameter idref="clock.rate.ratio"/>
+    <globalScale>
+      <parameter value="1.0" lower="0"/>
+    </globalScale>
+    <exponent>
+      <parameter value="2.0"/>
+    </exponent>
+    <localScale>
+      <parameter value="1.0" dimension="1"/>
+    </localScale>
+  </bayesianBridge>
+
+  <glmSubstitutionModelGradient id="trait.gradient" traitName="trait" effects="fixed">
+    <treeDataLikelihood idref="treeLikelihood"/>
+    <glmSubstitutionModel idref="trait.model"/>
+  </glmSubstitutionModelGradient>
+
+  <numericalHessian id="trait.hessian">
+    <glmSubstitutionModel idref="trait.gradient"/>
+  </numericalHessian>
+
+  <compoundGradient id="compoundPriorGradient">
+    <bayesianBridge idref="fixed.effects.prior"/>
+    <bayesianBridge idref="random.effect.fixed0.dummyPrior"/>
+    <bayesianBridge idref="clock.rate.ratio.prior"/>
+  </compoundGradient>
+
+	<!-- Define operators                                                        -->
+	<operators id="operators" optimizationSchedule="power">
+    <hamiltonianMonteCarloOperator weight="3" nSteps="7" stepSize="1E-3" mode="vanilla"
+		                 drawVariance="1.0" autoOptimize="true" targetAcceptanceProbability="0.4"
+		                 preconditioningUpdateFrequency="10" preconditioningUpdateDelay="0">
+			<jointGradient>
+				<glmSubstitutionModelGradient idref="trait.hessian"/>
+        <compoundGradient idref="compoundPriorGradient"/>
+			</jointGradient>
+      <mask>
+        <parameter id="mask.dummy" value="1 1 1 1 1 1 1 1 0 1"/>
+      </mask>
+			<preconditioner>
+				<compoundPriorPreconditioner>
+          <bayesianBridge idref="fixed.effects.prior"/>
+          <bayesianBridge idref="random.effect.fixed0.dummyPrior"/>
+          <bayesianBridge idref="clock.rate.ratio.prior"/>
+				</compoundPriorPreconditioner>
+			</preconditioner>
+		</hamiltonianMonteCarloOperator>
+
+    <scaleOperator scaleFactor="0.75" weight="2.0">
+			<parameter idref="trait.clock.rate"/>
+		</scaleOperator>
+  </operators>
+
+  <mcmc id="mcmc" chainLength="50000" autoOptimize="true" operatorAnalysis="frogs_independent.ops">
+    <joint id="joint">
+      <prior id="prior">
+        <ctmcScalePrior>
+          <ctmcScale>
+            <parameter idref="trait.clock.rate"/>
+          </ctmcScale>
+          <treeModel idref="treeModel"/>
+        </ctmcScalePrior>
+
+        <strictClockBranchRates idref="trait.branchRates"/>
+
+        <!-- DO NOT FORGET THESE -->
+        <bayesianBridge idref="fixed.effects.prior"/>
+        <bayesianBridge idref="random.effect.fixed0.dummyPrior"/>
+        <bayesianBridge idref="clock.rate.ratio.prior"/>
+
+        </prior>
+      <treeDataLikelihood idref="treeLikelihood"/>
+    </joint>
+
+    <operators idref="operators"/>
+
+    <!-- write log to screen                                                     -->
+    <log id="screenLog" logEvery="100">
+      <column label="Joint" dp="4" width="12">
+        <joint idref="joint"/>
+      </column>
+      <column label="Prior" dp="4" width="12">
+        <prior idref="prior"/>
+      </column>
+      <column label="Likelihood" dp="4" width="12">
+        <treeDataLikelihood idref="treeLikelihood"/>
+      </column>
+    </log>
+
+    <!-- write log to file                                                       -->
+    <log id="fileLog" logEvery="10" fileName="frogs_independent.log" overwrite="false">
+      <joint idref="joint"/>
+      <prior idref="prior"/>
+      <parameter idref="fixed.effects"/>
+      <parameter idref="random.effect.fixed0"/>
+      <parameter idref="clock.rate.ratio"/>
+      <parameter idref="trait.clock.rate"/>
+      <treeDataLikelihood idref="treeLikelihood"/>
+      <strictClockBranchRates idref="trait.branchRates"/>
+    </log>
+
+  </mcmc>
+
+  <report>
+    <property name="timer">
+      <mcmc idref="mcmc"/>
+    </property>
+  </report>
+
+</beast>
