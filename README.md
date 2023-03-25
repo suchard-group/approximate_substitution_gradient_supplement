@@ -2,10 +2,10 @@
 This repository contains the scripts and XML files required to reproduce the analyses performed in the "Random-effects substitution models for phylogenetics via scalable gradient approximations" paper by Magee et al.
 
 ## Installing BEAST/BEAGLE
-These analyses require installation of the `hmc-clock` branches of both BEAST and BEAGLE.
+These analyses require installation of the `hmc-clock` branch of BEAST and either the v4.0.0 release of BEAGLE or the `hmc-clock` branch of BEAGLE.
 
 ## Setting up BEAGLE
-Please follow the [BEAGLE installation instructions](https://github.com/beagle-dev/beagle-lib), but be sure to get the `hmc-clock` branch.
+If opting not to use the [v4.0.0 release of BEAGLE](https://github.com/beagle-dev/beagle-lib/releases/tag/v4.0.0), please follow the [BEAGLE installation instructions](https://github.com/beagle-dev/beagle-lib), but be sure to get the `hmc-clock` branch.
 
 For Mac users, the following commands will compile the CPU version of BEAGLE.
 Follow the [instructions](https://github.com/beagle-dev/beagle-lib) if you need to install any other dependent software, ignore the first 2 lines if you already have all requisite dependencies installed.
