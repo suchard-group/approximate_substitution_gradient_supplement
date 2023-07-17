@@ -232,18 +232,19 @@
         </glmModel>
     </glmSubstitutionModel>
 
-		<bayesianBridge id="randomEffects.prior">
-				<parameter idref="glmRandCoefficients"/>
-				<globalScale>
-						<parameter id="randomEffects.globalScale" value="1.0"/>
-				</globalScale>
-				<localScale>
-						<parameter id="randomEffects.localScale" value="1.0" dimension="380"/>
-				</localScale>
-				<exponent>
-						<parameter value="0.25"/>
-				</exponent>
-		</bayesianBridge>
+	<!-- A Normal(0,1) prior written as a Bridge -->
+	<bayesianBridge id="randomEffects.prior">
+			<parameter idref="glmRandCoefficients"/>
+			<globalScale>
+					<parameter id="randomEffects.globalScale" value="1.0"/>
+			</globalScale>
+			<localScale>
+					<parameter id="randomEffects.localScale" value="1.0" dimension="380"/>
+			</localScale>
+			<exponent>
+					<parameter value="2.0"/>
+			</exponent>
+	</bayesianBridge>
 
 	<!-- site model                                                              -->
 	<siteModel id="siteModel">
@@ -296,14 +297,6 @@
 
 	<report>
 		<maximizeWrtParameter idref="infer.refx.ml.approx"/>
-	</report>
-
-	<laplaceApproximation id="laplace.approximation.approx" reportDiagonal="true">
-		<maximizeWrtParameter idref="infer.refx.ml.approx"/>
-	</laplaceApproximation>
-
-	<report>
-		<laplaceApproximation idref="laplace.approximation.approx"/>
 	</report>
 
 </beast>
