@@ -140,22 +140,16 @@ The following commands will run MAP optimization with numeric and approximate gr
   ```
   java -Djava.library.path=/usr/local/lib \
   -jar /path/to/beast-mcmc/build/dist/beast.jar \
-  -seed 6661 -overwrite \
+  -seed 666 -overwrite \
   ../xmls/optimize_aa_num.xml > aa_numerical_output.txt
   ```
 - Approximate
   ```
   java -Djava.library.path=/usr/local/lib \
   -jar /path/to/beast-mcmc/build/dist/beast.jar \
-  -seed 6661 -overwrite \
+  -seed 666 -overwrite \
   ../xmls/optimize_aa_approx.xml > aa_approximate_output.txt
   ```
-- Laplace approximation. 
-    - The approximate inference run is also set up to make a Laplace approximation to the posterior at the mode. 
-    - In a Laplace approximation, the posterior is approximated as a multivariate Normal. From this we can also obtain a univariate Normal approximation to the marginal distribution of each variable.
-    - This adds several lines to the output. The key lines are:
-        - `Mean vector: [...]`: the mean vector of the multivariate Normal approximation (in the unbounded transformed space). For this analysis this is the same as `X`.
-        - `Stdev vector: [...]`: for each variable, this is the standard deviation of the Normal approximation to its marginal posterior distribution.
 
 ### Dependent evolution in Hylinae
 The analyses of the Hylinae dataset run quickly and converge readily and only a single chain of each was run.
