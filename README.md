@@ -55,6 +55,16 @@ For Linux users, you can install ant by `sudo apt-get install ant`.
 
 This will compile the `jar` file `beast.jar` in `beast-mcmc/build/dist/beast.jar` which can be called to execute BEAST.
 
+### Running BEAST with BEAGLE
+To test that BEAST can use the BEAGLE implementation, one may run BEAST with the `-beagle_info` flag which will simply print all available computational resources to screen.
+No XML need be supplied, e.g. `java -jar /path/to/beast-mcmc/build/dist/beast.jar -beagle_info`.
+
+If BEAST cannot find BEAGLE, try the following:
+- Call BEAST with the `-Djava.library.path` flag set to point to BEAGLE, e.g. `java -Djava.library.path=/path/to/where/beagle/is/installed -jar /path/to/beast-mcmc/build/dist/beast.jar -beagle_info`
+- Add the location of BEAGLE to your PATH by running `export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/usr/local/lib` before calling BEAST.
+
+More information about installing BEAGLE is available in the [BEAGLE repository](https://github.com/beagle-dev/beagle-lib).
+
 ## Reproducing the analyses
 
 You may use the following commands to run the analyses described in the manuscript.
