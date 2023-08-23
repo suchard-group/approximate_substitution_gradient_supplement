@@ -69,6 +69,8 @@ More information about installing BEAGLE is available in the [BEAGLE repository]
 
 You may use the following commands to run the analyses described in the manuscript.
 
+(If this repository has been obtained from Dryad, rename the folder `Archive` to `approximate_substitution_gradient_supplement` before continuing.)
+
 From the top level of `approximate_substitution_gradient_supplement`, create and change directories to `output`.
 ```
 mkdir output
