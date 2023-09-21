@@ -15,7 +15,7 @@ log_thin_factor <- 50000/500
 # If we remove the first 50% and take every 2nd tree, this will leave us with 1000 simulations total
 keep <- seq(502,1000,2)
 
-parent_dir <- ""
+parent_dir <- "approximate_substitution_gradient_supplement"
 
 pibuss_script_refx <- scan("piBUSS/src/piBUSS_randomEffects.xml",what=character(),sep="\n",strip.white=FALSE)
 

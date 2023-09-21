@@ -28,6 +28,7 @@ Additionally, it is assumed that at least one complete analysis each of the SARS
 The output of these completed runs must be placed as follows:
 - GTR analyses (log and tree files) go in `approximate_substitution_gradient_supplement/output/SC2_GTR/job_<i>` where `<i>` goes from 1 to the number of replicate chains run (minimum 1)
 - HMC-inferred random-effects analyses (log and tree files) go in `approximate_substitution_gradient_supplement/output/SC2_HMC/job_<i>`
+
 If you wish to change this directory structure, amend lines 18, 41-49, and 55-56 of `simulate_and_summarize.R` as needed.
 
 BEAGLE is assumed to be in `/usr/local/lib` as in the main README, and BEAST is assumed to exist in `~/git_repos/beast-mcmc/build/dist/beast.jar` (otherwise amend lines 125-126 of `simulate_and_summarize.R`).
