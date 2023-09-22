@@ -2,7 +2,7 @@
 
 ## Dependencies
 The posterior-predictive simulations require:
-- piBUSS (which is already available to users who have followed the instructions for installing BEAST in the main README)
+- piBUSS (which is already available to users who have followed the instructions for installing BEAST in the main README).
 - R, including the package `phangorn` (and all its dependencies). The versions need not be particularly recent.
 
 ## File overview
@@ -23,7 +23,7 @@ The pipeline makes a number of relatively strong assumptions about the existence
 There must be a file `piBUSS/data/aln.fasta` which contains the alignment for the sequences in fasta format.
 This is needed to compute the posterior predictive p-values, and to ensure simulated alignments have ambiguities that match the real one.
 
-Additionally, it is assumed that at least one complete analysis each of the SARS-CoV-2 analysis with both the random-effects model (using HMC) and the GTR model are completed, with the run lengths and thinning settings unchanged.
+Additionally, it is assumed that at least one complete analysis each of the SARS-CoV-2 analysis with both the random-effects model (using HMC) and the GTR model are completed, with the run lengths, thinning settings, and file output names unchanged.
 (The number of replicates is set on line 9 of `simulate_and_summarize.R`, while changes to the length and thinning will necessitate changing lines 12 and 16 to match.)
 The output of these completed runs must be placed as follows:
 - GTR analyses (log and tree files) go in `approximate_substitution_gradient_supplement/output/SC2_GTR/job_<i>` where `<i>` goes from 1 to the number of replicate chains run (minimum 1)
